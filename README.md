@@ -55,7 +55,7 @@ A Virtual Private Cloud is an isolated virtual network environment where you can
 │  │               │  (Linux Bridge)  │                  │    │
 │  │               │  GW: 10.0.0.1    │                  │    │
 │  │               └────────┬─────────┘                  │    │
-│  └────────────────────────┼──────────────────────────  │    │
+│  └────────────────────────┼────────────────────────────┘    │
 │                           │                                 │
 │                           │ NAT (iptables MASQUERADE)       │
 │                           ▼                                 │
@@ -399,4 +399,4 @@ MIT License - see LICENSE file for details
 
 ---
 
-Made with ❤️ for HNG DevOps Internship Stage 4
+Written for HNG DevOps Internship Stage 4 by - Ubah Delight Okechukwu!
