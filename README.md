@@ -390,7 +390,7 @@ MIT License - see LICENSE file for details
 ## 📧 Contact
 
 - GitHub: [@delightverse](https://github.com/delightverse/hng13-stage4-devops)
-- Blog: [delightsVerse](https://medium.com/@delight.verse01/my-stage-4-hng-project-local-vpc-creation-aad81b52afd5)
+- Blog: [delightverse](https://medium.com/@delight.verse01/my-stage-4-hng-project-local-vpc-creation-aad81b52afd5)
 - HNG: [HNG Internship](https://hng.tech)
 
 ---
