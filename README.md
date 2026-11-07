@@ -1,9 +1,9 @@
 # Virtual Private Cloud from Scratch
 
-🚀 **Building AWS-like VPC functionality using Linux networking primitives**
+**Building AWS-like VPC functionality using Linux networking primitives**
 
 
-## 📋 Project Overview
+## Project Overview
 
 This project implements a fully functional Virtual Private Cloud (VPC) system on Linux using native networking tools. No third-party virtualization software required - just pure Linux primitives!
 
@@ -19,7 +19,7 @@ A Virtual Private Cloud is an isolated virtual network environment where you can
 - **iptables**: Firewall and NAT configuration
 - **Python 3**: CLI tool implementation
 
-## ✨ Features
+## Features
 
 ✅ **Multiple VPC Support** - Create isolated virtual networks  
 ✅ **Public & Private Subnets** - Control internet access  
@@ -31,7 +31,7 @@ A Virtual Private Cloud is an isolated virtual network environment where you can
 ✅ **State Persistence** - VPC configurations saved to disk  
 ✅ **Comprehensive Logging** - All operations logged  
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -74,7 +74,7 @@ A Virtual Private Cloud is an isolated virtual network environment where you can
 5. **NAT Gateway**: iptables rules provide internet access for public subnets
 6. **VPC Peering**: veth pairs connect different VPC bridges
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -126,7 +126,7 @@ sudo ./vpcctl show-vpc --name myvpc
 sudo ./vpcctl delete-vpc --name myvpc
 ```
 
-## 📖 Complete CLI Reference
+## Complete CLI Reference
 
 ### VPC Management
 
@@ -177,7 +177,7 @@ sudo ./vpcctl apply-policy --vpc <vpc-name> --subnet <subnet-name> --policy <pol
 sudo ./vpcctl deploy-app --vpc <vpc-name> --subnet <subnet-name> --port <port>
 ```
 
-## 🧪 Testing
+## Testing
 
 ### Run Quick Demo
 
@@ -210,7 +210,7 @@ curl http://<subnet-ip>:<port>
 sudo ip netns exec ns-<vpc>-<subnet> <command>
 ```
 
-## 🔥 Example Workflows
+## Example Workflows
 
 ### Example 1: Simple VPC with Web Server
 
@@ -268,7 +268,7 @@ EOF
 sudo ./vpcctl apply-policy --vpc myvpc --subnet public --policy my_policy.json
 ```
 
-## 📊 Test Results
+## Test Results
 
 All tests passing ✅
 
@@ -287,7 +287,7 @@ All tests passing ✅
 
 See `tests/test_results_*.log` for detailed results.
 
-## 🧹 Cleanup
+## Cleanup
 
 ```bash
 # Clean up all VPCs via CLI
@@ -297,7 +297,7 @@ sudo ./vpcctl cleanup-all
 sudo ./cleanup.sh
 ```
 
-## 📁 Project Structure├──
+## Project Structure
 
 ```
 vpc-from-scratch/
@@ -316,7 +316,7 @@ vpc-from-scratch/
 
 ```
 
-## 🔍 Under the Hood
+## Under the Hood
 
 ### Network Namespaces
 Each subnet is a network namespace - an isolated networking environment with its own interfaces, routing table, and firewall rules.
@@ -345,7 +345,7 @@ ip netns exec <namespace> ip route add default via <gateway-ip>
 ip route add <vpc2-cidr> dev <vpc1-bridge>
 ```
 
-## 🎓 Learning Resources
+## Learning Resources
 
 ### Blog Post
 📝 [Building a VPC from Scratch - Complete Tutorial] ()
@@ -359,7 +359,7 @@ ip route add <vpc2-cidr> dev <vpc1-bridge>
 - [iptables Tutorial](https://www.netfilter.org/documentation/HOWTO/packet-filtering-HOWTO.html)
 - [AWS VPC Documentation](https://docs.aws.amazon.com/vpc/)
 
-## 🌟 Real-World Applications
+## Real-World Applications
 
 This knowledge is directly applicable to:
 
@@ -369,7 +369,7 @@ This knowledge is directly applicable to:
 - **Network Troubleshooting**: Deep understanding of packet flow
 - **Infrastructure Design**: Designing secure, isolated networks
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Feel free to:
 - Report bugs
@@ -377,17 +377,17 @@ Contributions are welcome! Feel free to:
 - Submit pull requests
 - Improve documentation
 
-## 📝 License
+## License
 
 MIT License - see LICENSE file for details
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built for HNG DevOps Internship Stage 4
 - Inspired by AWS VPC and cloud networking concepts
 - Thanks to the Linux networking community
 
-## 📧 Contact
+## Contact
 
 - GitHub: [@delightverse](https://github.com/delightverse/hng13-stage4-devops)
 - Blog: [delightverse](https://medium.com/@delight.verse01/my-stage-4-hng-project-local-vpc-creation-aad81b52afd5)
@@ -395,7 +395,7 @@ MIT License - see LICENSE file for details
 
 ---
 
-**⭐ If this project helped you understand networking, please star the repository!**
+**If this project helped you understand networking, please star the repository!**
 
 ---
 
